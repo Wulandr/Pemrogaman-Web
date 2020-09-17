@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scal=1">
+        <title>Formulir Pendaftaran Mahasiswa Baru</title>
+        <style>
+            .button{
+                background-color: rgb(35, 93, 97);
+                color: aliceblue;
+                padding: 14px 20px;
+                margin: 10px 0px;
+                cursor: pointer;
+                width:auto;
+                border:none;
+                
+            }
+            body{
+                font-size:16px; 
+                background-color:white; 
+                text-align:justify;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 7px;
+                margin:15px;
+            }
+            #word1 {
+                color: rgb(2, 75, 75);
+                text-align: center;
+            }
+            #word2 {
+                text-align:justify; 
+                line-height: 1.8;
+                border-style:groove;
+                border-width:5px 5px;
+                background-color:rgb(225, 235, 238);
+            }
+            #word3 {
+                color: rgb(2, 75, 75);
+            }
+        </style>
+    </head>
+    <body>
+       
+        <h1 id="word1"><b>Formulir Pendaftaran Mahasiswa Baru</b></h1>
+        
+      
+        <div id="word2">
+        <h3 id="word3"><b>Data Pribadi Anda</b></h3>
+        
+        Nama Depan      : <input type="text" name="first_name" value="Tn/Nn "> </br>
+        Nama Belakang   : <input type="text" name="last_name"> </br>
+        Tempat Lahir    : <input type="text" name="tempat_lahir"> </br> 
+        Tanggal Lahir   : <input type="date" id="tanggal_lahir"> </br>
+        Jenis Kelamin   : <input type="radio" name="jenis">Laki-laki 
+        <input type="radio" name="jenis">Perempuan </br>
+        Agama           : <input type="text" name="agama"></br>
+        Berat Badan(kg) : <input type="text" name="berat_badan"></br>
+        Tinggi Badan(cm) : <input type="text" name="tinggi_badan"></br>
+        Alamat           : <input type="text" name="alamat"></br>
+        Kodepos          : <input type="text" name="kodepos"></br>
+        No.Telp & Hp     : <input type="text" name="telp"></br>
+        Upload Foto Formal  : <input type="file" name="image"></br>
+
+        <h3 id="word3"><b>Data Asal Sekolah</b></h3>
+        Nama Sekolah    : <input type="text" name="sekolah"></br>
+        Alamat Sekolah  : <input type="text" name="alamat_sekolah"></br>
+        Jurusan         : <input type="radio" name="jurusan">IPA 
+        <input type="radio" name="jurusan">IPS  
+        <input type="radio" name="jurusan">Bahasa
+        <input type="radio" name="jurusan">Lainnya 
+        <input type="text" name="jurusan_lainnya"></br>
+        Upload Scan Ijazah/SKHUN  : <input type="file" name="ijazah" display></br>
+   
+        <h3 id="word3"><b>E-mail</b></h3>
+        E-mail           : <input type="text" name="email"></br>
+        <h3 id="word3"><b>Program Studi yang dipilih</b></h3>
+        Saintek :
+        <input list="prodi" name="prodi">
+        <datalist id="prodi">
+          <option value="Teknik Informatika">
+          <option value="Cyber Security">
+        </datalist>
+    </br>
+        Soshum :
+        <input list="prodi2" name="prodi2">
+        <datalist id="prodi2">
+          <option value="Hubungan Internasional">
+          <option value="Ilmu Pemerintahan">
+        </datalist>
+    </br>
+        <div><input type="Submit" class="button"></p>
+    </div>
+        </br> </br>   
+    </body>
+</html>
